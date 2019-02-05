@@ -13,7 +13,8 @@ export class AppComponent  {
   menu2 :MenuItem;
   menu3 :MenuItem;
   items:any;
-
+  selectedItem:any;
+  
   constructor(){
 
     this.menu = {name:"מוצרים",icon:"extension",url:"home"};

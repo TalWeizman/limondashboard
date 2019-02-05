@@ -1,4 +1,6 @@
 <nb-layout>
+
+
   <nb-layout-header fixed >
       <div style="width:10px"></div>
       <nb-user style="color:#A5ACB4; cursor: pointer;"  name="סופר מגה" title="חנות"  [nbContextMenu]="items" ></nb-user>
@@ -17,8 +19,25 @@
     <a href="#"><img style="height:55px"  class="rounded-circle" src="./assets/new-logo.png" alt=""></a>
   </nb-layout-header>
 
+  
   <nb-layout-column>
-    
+      
+     <div class="container-fluid">
+
+      <div class="row" style="padding:0 20px 20px 20px; text-align: right;direction: rtl">
+        <span>שלום, מנשה ישראלי (324324234) </span>
+        <span class="menu-spacer"></span>
+        <span style="padding-top:10px"> :בחירת חנות</span>
+        <span style="width:20px"></span>
+        <nb-select size="small" status="info" placeholder="בחר חנות" [(selected)]="selectedItem">
+
+            <nb-option value="1">חנות 1</nb-option>
+            <nb-option value="2">חנות 2</nb-option>
+            <nb-option value="3">חנות 3</nb-option>
+            <nb-option value="4">חנ, 4</nb-option>
+          </nb-select>
+      </div>
+     </div>
     <router-outlet></router-outlet>
   </nb-layout-column>
 
