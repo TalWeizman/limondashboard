@@ -23,10 +23,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@nebular/theme/styles/prebuilt/default.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/custom-theme.scss",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/chart.js/src/chart.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

@@ -1,0 +1,28 @@
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
+@import '../../node_modules/@nebular/theme/styles/global/breakpoints';
+
+.menu-spacer {
+    flex: 1 1 auto;
+  }
+
+
+  .vl {
+    border-left: 2px solid #EBEEF2;
+    height: 100%;
+    margin: 0 15px;
+  }
+
+
+
+  
+  @include media-breakpoint-down(sm) {
+
+    app-menu-item {
+      display: none;
+    }
+
+    .vl{
+      display: none;
+    }
+
+  }
